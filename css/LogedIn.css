@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 600px;
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    background-color: crimson;
+    border-radius: 0 0 40px 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.header .container a {
+    color: white;
+}
+
+
+.msgInput {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #333;
+    position: fixed;
+    top: 62%;
+    width: 100%;
+    z-index: 9999;
+
+}
+
+.msgInput .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.msgInput .container input {
+    width: 85%;
+    height: 35px;
+    border-radius: 40px;
+    padding: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid crimson;
+}
+
+.msgInput .container input:focus {
+    color: white;
+}
+.msgInput .container input::placeholder {
+    opacity: 1;
+    transition: 0.3s;
+}
+.msgInput .container input:focus::placeholder {
+    opacity: 0;
+}
+
+.msgInput .container a {
+    color: white;
+    font-size: 15px;
+    background-color: crimson;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+}
